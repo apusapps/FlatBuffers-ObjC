@@ -88,7 +88,7 @@
             [self performSelector:name onThread:thread withObject:nil waitUntilDone:YES];
         }
     }
-    
+    free(methods);
     return [bb data];
     
 }
